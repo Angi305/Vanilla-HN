@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hacker News Clone</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="icon" href='favicon.ico'/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/Contacts_orn.png" />
+   <link rel="stylesheet" href="/font-awesome/fontawesome-free-5.15.4-web/css/all.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.4.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="root">
+        <nav class="navbar navbar-style">
+            <div class="container" style="margin-right:16%;">
+               <div class=" col-sm-4 col-xs-5 " id="logo_holder">
+                  <a href="index.html">
+                      <img src="/images/img/picture.png" id="logo_icon" class="form-inline">
+                      <h3 id="logo_hacker" class="form-inline" >Search<br>Hacker News</h3>
+                  </a>
+              </div>
+              <div class="col-md-8 col-sm-10 col-xs-3">
+                  <div id="search_holder" style="margin-left:16%;">
+                     <form id="search-form" class="form-inline" role="form" method="post" action="//www.google.com/search" target="_blank" style="margin-right: 50%;">
+                     <input type="text" class="form-control search-form" placeholder="Search"  class="input-group-btn" style="border-radius:25px;">
+                     <i class="fas fa-search" id="search_icon" style="margin-left: 230px;"></i>
+              
+                  </div>
+              </div>    
+         </nav>
+         
+         <div id="news-feed">
+            <div class="wrapper">
+               <div class="navbar-header-1">
+                  <div class="side-bars">
+                     <div class="forms-inline float-right"> 
+                        <div class="form-check form-check-inline" id="form-check">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="24H" value="24H">
+                           <label class="form-check-label" for="24H">Last 24h</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="PastWeek" value="PastWeek">
+                           <label class="form-check-label" for="PastWeek">Past week</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="PastMonth" value="PastMonth">
+                           <label class="form-check-label" for="PastMonth">Past month</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Forever" value="Forever">
+                           <label class="form-check-label" for="Forever">Forever</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            </div>
+            <div id="side_menu" >
+                <div id="top_side_menu">
+                    <ul class="nav-item">
+                        <li class="nav-item" id="all"><a class="nav-link text-truncate" href="#/all"><i class="fas fa-newspaper"></i> <span class="d-none d-sm-inline"><span>All</span></a>
+                        <li class="nav-item" id="ask"><a class="nav-link text-truncate" href="#/ask"><i class="far fa-comment"></i><span>ASK HN</span></a>
+                        <li class="nav-item"id="show"><a class="nav-link text-truncate" href="#/show"><i class="fas fa-bullhorn"></i><span>Show HN</span></a></li>
+                        <li class="nav-item"id="jobs"><a class="nav-link text-truncate" href="#/jobs"><i class="fas fa-hand-holding-usd"></i> <span class="d-none d-sm-inline">Jobs</span></a></li>
+                        <hr class="mt-2 mb-3" style="width: 200px;"/>
+                        </hr>
+                        <li class="nav-item" id="saved"><a class="nav-link text-truncate" href="#/saved"><i class="far fa-star"></i> <span >Starred</span></a></li>
+                     </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <nav aria-label="Page navigation example" id="pagination" style="margin-left: 40%;">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" style="background-color: #FF7316;" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                          </li>
+                          <li class="page-item" value="one"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item" value="two"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item" value="three"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" style="background-color: #FF7316;" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        <!-- script -->
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
